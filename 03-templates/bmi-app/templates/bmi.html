@@ -1,0 +1,18 @@
+<!doctype html>
+<h1>BMI App</h1>
+
+<body>
+    <form method="POST" action="/">
+        <label for="weight">Weight:</label><br>
+        <input type="text" name="weight"><br>
+        <label for="height">Height:</label><br>
+        <input type="text" name="height"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if bmi %}
+    <p>
+        {% print("Your BMI is {}.".format(bmi)) %}
+    </p>
+    {% endif %}
+</body>
