@@ -62,7 +62,7 @@ def searchNews(tag,API_KEY):
 
     
 def getCovidNews():
-    url = "https://newsapi.org/v2/top-headlines?q=covid&page=1&apiKey=50b07b77004c4764b1eff0fa2fa09283"
+    url = "https://newsapi.org/v2/top-headlines?q=covid&page=1&apiKey=ebcd985b9a2d4aefb0e99d7b45bf8b3d"
     res = requests.get(url)
     news = res.json()
     list_news = list()
