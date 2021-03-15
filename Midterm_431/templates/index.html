@@ -1,0 +1,51 @@
+{% extends 'base_layout.html' %}
+
+{% block body %}
+    <div class="mt">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="touch">
+                    <div class="card text-left">
+                        <div class="card-body">
+
+
+                            <div class="table-responsive-sm">
+                                <table class="table table-md table-hover">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Energy</th>
+                                        <th scope="col">Protein</th>
+                                        <th scope="col">Fat</th>
+                                        <th scope="col">Carbohydrate</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for data in data %}
+    
+                                      <tr>
+                                        <th scope="row">{{data.name}}</th>
+                                        <td>{{data.energy}}</td>
+                                        <td>{{data.protein}}</td>
+                                        <td>{{data.fat}}</td>
+                                        <td>{{data.carbohydrate}}</td>
+        
+                                      </tr>
+                                      {% endfor %}
+    
+                                    </tbody>
+                                  </table>  
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    {% endblock %}
