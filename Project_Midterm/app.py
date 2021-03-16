@@ -27,6 +27,11 @@ def news():
     return render_template('genre.html')
 
 
+@app.route('/info')
+def info():
+    return render_template('Info.html')
+
+
 
 @app.route('/aboutus')
 def aboutme():
