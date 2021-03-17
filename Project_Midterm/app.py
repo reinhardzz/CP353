@@ -32,10 +32,9 @@ def mostPop(page = 0):
     return render_template('mostPop.html', data = mostPop, curPage = curPage, title = "MostPopular")
 
 
-@app.route('/info/<id>')
-def info(id):
-    url = 'https://api.jikan.moe/v3/anime/' + id
-    return requests.get(url).json()
+@app.route('/info')
+def info():
+    return render_template('info.html')
  
  
 @app.route('/search/')
